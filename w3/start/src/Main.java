@@ -1,20 +1,15 @@
-//https://www.w3schools.com/java/java_variables.asp
+// https://www.w3schools.com/java/java_variables_identifiers.asp
 
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println(2 * 3 * 4 + 5); // This is a comment
-    }
+  public static void main(String[] args) {
+
+    int x, y, z;
+
+    x = y = z = 12;
+
+    System.out.println(x);
+    System.out.println(y);
+    System.out.println(z);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
