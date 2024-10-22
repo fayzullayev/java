@@ -1,15 +1,14 @@
-// https://www.w3schools.com/java/java_variables_identifiers.asp
+//https://www.w3schools.com/java/java_data_types_numbers.asp
+
 
 public class Main {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+        int myNum = 1;
+        float myFloat = 5.99f;
+        char myLetter = 'D';
+        boolean myBool = true;
+        String myText = "Hello";
 
-    int x, y, z;
-
-    x = y = z = 12;
-
-    System.out.println(x);
-    System.out.println(y);
-    System.out.println(z);
-  }
+    }
 }
