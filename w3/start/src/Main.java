@@ -1,14 +1,13 @@
-//https://www.w3schools.com/java/java_data_types_numbers.asp
+//https://www.w3schools.com/java/java_data_types_characters.asp
 
 
 public class Main {
 
     public static void main(String[] args) {
-        int myNum = 1;
-        float myFloat = 5.99f;
-        char myLetter = 'D';
-        boolean myBool = true;
-        String myText = "Hello";
+
+        boolean isJavaFun = true;
+        System.out.println("isJavaFun: " + isJavaFun);
+
 
     }
 }
