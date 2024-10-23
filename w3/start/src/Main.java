@@ -3,8 +3,15 @@
 public class Main {
 
   public static void main(String[] args) {
-    boolean isJavaFun = true;
+    System.out.println("                 wwf                ");
+    System.out.println("fewfewfewf e fwe f wef we f wef we f");
+    System.out.println("fewfewfewf e fwe f wef we f wef we f");
+    System.out.println("fewfewfewf e fwe f wef we f wef we f");
+    System.out.println("fewfewfewf e fwe f wef we f wef we f");
+    System.out.println("                            jgugjhgj");
+  }
 
-    System.out.println("isJavaFun: " + isJavaFun);
+  static void myFunc() {
+    System.out.println("Hello World " + 9999);
   }
 }
