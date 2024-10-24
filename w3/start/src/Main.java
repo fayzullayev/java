@@ -1,17 +1,15 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
+// time 33:08
+
 public class Main {
 
-  public static void main(String[] args) {
-    System.out.println("                 wwf                ");
-    System.out.println("fewfewfewf e fwe f wef we f wef we f");
-    System.out.println("fewfewfewf e fwe f wef we f wef we f");
-    System.out.println("fewfewfewf e fwe f wef we f wef we f");
-    System.out.println("fewfewfewf e fwe f wef we f wef we f");
-    System.out.println("                            jgugjhgj");
-  }
+    public static void main(String[] args) {
 
-  static void myFunc() {
-    System.out.println("Hello World " + 9999);
-  }
+        long num = 327688889899897L;
+
+        System.out.println(num);
+
+    }
+
 }
