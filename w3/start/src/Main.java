@@ -1,15 +1,30 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 33:08
+// time 49:43
+
+import java.util.Arrays;
 
 public class Main {
-
     public static void main(String[] args) {
 
-        int a = 1_000_000;
-        double b = 1_000_____000.56;
-        float c = 1_000_000.56F;
-        double f = 1_000_000.67F;
+        long a = 100L;
+
+        int b = 10;
+
+        short s = 50;
+
+        long d = s;
+
+
+        float f1 = d;
+
+//        double d1 = 454542D;
+//
+//        float f2 = (float) d1;
+
+
+        System.out.println(f1);
+
 
     }
 
