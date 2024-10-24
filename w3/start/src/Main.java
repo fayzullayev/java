@@ -6,9 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        long num = 327688889899897L;
-
-        System.out.println(num);
+        int a = 1_000_000;
+        double b = 1_000_____000.56;
+        float c = 1_000_000.56F;
+        double f = 1_000_000.67F;
 
     }
 
