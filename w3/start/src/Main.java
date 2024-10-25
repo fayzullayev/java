@@ -1,17 +1,20 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 1:34:22
+// time 4 th lesson 31:37
+
+import hello.Hello;
+import hello.Hello2;
 
 import java.util.Arrays;
 
 public class Main {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    boolean a = 3 >= 2;
 
-    boolean c = a == true ? true : false;
+        Hello h = new Hello();
 
-    System.out.println("a:" + a);
-  }
+        Hello2 h2 = new Hello2();
+
+    }
 }
