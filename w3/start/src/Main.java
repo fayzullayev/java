@@ -2,19 +2,15 @@
 
 // time 4 th lesson 31:37
 
-import hello.Hello;
-import hello.Hello2;
+import bank_account.BankAccount;
 
-import java.util.Arrays;
+class Main {
 
-public class Main {
+  public static void main(String[] args) {
+    BankAccount ba = new BankAccount(1, "Mirodil", 66.66);
+    System.out.println(ba);
 
-    public static void main(String[] args) {
-
-
-        Hello h = new Hello();
-
-        Hello2 h2 = new Hello2();
-
-    }
+    BankAccount ba2 = ba;
+    System.out.println(ba2);
+  }
 }
