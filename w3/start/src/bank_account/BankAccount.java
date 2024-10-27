@@ -5,7 +5,8 @@ public class BankAccount {
   public int id;
   public String name;
   public double balance;
-  public char c;
+  //  public char c;
+  final char c = 'h';
 
   public BankAccount(int id, String name, double balance) {
     this.id = id;

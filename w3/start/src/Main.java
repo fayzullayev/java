@@ -1,16 +1,16 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 4 th lesson 31:37
+// time 5 th lesson 21:15
 
 import bank_account.BankAccount;
 
 class Main {
 
   public static void main(String[] args) {
-    BankAccount ba = new BankAccount(1, "Mirodil", 66.66);
-    System.out.println(ba);
+    BankAccount a;
+    String a1 = new String("He1llo");
+    String a2 = "fgcgfcgf";
 
-    BankAccount ba2 = ba;
-    System.out.println(ba2);
+    System.out.println("Hello: " + a1.intern());
   }
 }
