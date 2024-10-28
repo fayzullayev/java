@@ -1,16 +1,15 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 5 th lesson 21:15
+// time 5 th lesson 1:12:29
 
 import bank_account.BankAccount;
+import math.Math;
 
 class Main {
 
-  public static void main(String[] args) {
-    BankAccount a;
-    String a1 = new String("He1llo");
-    String a2 = "fgcgfcgf";
+    public static void main(String[] args) {
+        var m = Math.average(1, 2, 3);
 
-    System.out.println("Hello: " + a1.intern());
-  }
+        System.out.println("sum: " + m);
+    }
 }
