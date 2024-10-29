@@ -1,27 +1,22 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 6th lesson 49:51
+// time 8th;
 
-import bank_account.BankAccount;
-import car.Car;
-import math.Math;
-import human.Human;
-import method_overloading.*;
 
-import java.util.Scanner;
+import human.Person;
+import people.People;
 
 class Main {
 
     public static void main(String[] args) {
-//    MethodOverloading2 m = new MethodOverloading2();
-//
-//    var uu = m.sum(1, 2);
-//    System.out.println("uu = " + uu);
-//
-//    var ss = m.sum("mirodil", "fayzullayev");
-//    System.out.println("ss = " + ss);
-//    ;
+//        vehicle.Vehicle vh = new vehicle.Vehicle();
 
-        System.out.println(4646 / 0);
+        People p = new People();
+
+        System.out.println(p);
+//
+//        System.out.println(vh.);
+
+
     }
 }
