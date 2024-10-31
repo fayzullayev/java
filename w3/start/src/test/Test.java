@@ -17,7 +17,6 @@ public class Test {
         final short b;
 
         b = 555;
-        c++;
 
         System.out.println(c + b);
     }
