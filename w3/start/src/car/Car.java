@@ -21,10 +21,10 @@ public class Car {
     }
 
     public void changeColor(String newColor) {
-        int newColor = 88;
+//        int newColor = 88;
         System.out.println("Color is changing");
         int price = 5000;
-        color = newColor;
+//        color = newColor;
         price += 1000;
     }
 

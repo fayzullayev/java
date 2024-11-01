@@ -1,9 +1,9 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 9th 49:00;
+// time 10th 00:00;
 
 import homework.Zadacha1;
-import human.Human;
+//import human.Human;
 import human.Person;
 import people.People;
 import test.Test;
