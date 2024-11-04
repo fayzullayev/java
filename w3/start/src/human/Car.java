@@ -1,4 +1,4 @@
-package car;
+package human;
 
 public class Car {
     int String = 10;
