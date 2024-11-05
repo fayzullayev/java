@@ -1,6 +1,6 @@
 // https://www.w3schools.com/java/java_data_types_characters.asp
 
-// time 11th 00:00;
+// time 12th 00:00;
 
 //import homework.Zadacha1;
 //import human.Human;
