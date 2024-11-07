@@ -2,14 +2,19 @@
 
 // time 12th 30:12;
 
+import car.Car;
+
 class Main {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    int a = 10;
+        Car c1 = new Car("red", "V3");
+        Car c2 = new Car("red", "V3");
+        Car c3 = c1;
 
-    if (a < 20)
-      ;
-    System.out.println("fsfdfds");
-  }
+        if ("hello" == "hello") {
+            System.out.println("Equal");
+        }
+
+    }
 }
