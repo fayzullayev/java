@@ -1,0 +1,98 @@
+last_lesson_number: 0;
+
+java --version
+javac - compiles .java to .class bytecode
+java - executes a program(without .class extension)
+javadoc - for documentation
+
+jre - java runtime environment
+
+to be precise: all fields are variables, but not all variables are fields
+---------------------------------------------------------------
+public class Student {
+    private String name;
+
+    public void setName(String name) {
+        name = name;
+    }
+}
+Bu yerda setName ichidagi name o'ziga o'zi qayta reassign bo'lytapi.
+Class ichidagi name fieldga aloqasi yo'q.
+
+Bitta faylda bir nechta class yaratish mumkin. Faqat bitta class public bo'lishi mumkin.
+O'sha bitta public class file name bilan bir xil bo'lishi shart.
+Masalan
+
+//Student.java filename
+
+public class Student{
+
+}
+---------------------------------------------------------------
+There are 3 types of comments
+1. // your comment - one-line comment
+2. /* your comment */ - multiline comment
+3. /** your comment */  - javadoc
+---------------------------------------------------------------
+main() method is the entry of any program. Every line of the main() will be executed.
+
+
+all the possible method signatures of main the method in Java
+
+public static void main(String[] args)       // Array brackets after the variable
+public static void main(String... args)      // Varargs (also accepted)
+public static void main(String args[])       // Alternate array syntax
+
+final public static void main(String args[])
+public final static void main(String args[])
+public static final void main(String args[])
+
+public static void main(final String args[])
+
+Note: the name of the parameter(args) is up to you. myvar is aslo works.
+
+public static void main(String myvar[]) // it works
+
+---------------------------------------------------------------
+public static final o'rinlari almashsa bo'ladi.
+
+public static final ==  static public final = final static public
+---------------------------------------------------------------
+java.util.Random - aniq bir klassni import qilish.
+java.util.* - util package ichidagi hamma klasslarni import qilish.(but not sub packages)
+
+class import qilmasdan bunday tarzda ham ishlatsa bo'ladi.
+
+java.util.Random rand = new java.util.Random();
+
+import java.util.*.* (Does not compile)
+
+* - (wildcards only works for classes not for packages)
+
+
+//conflicts
+import java.util.Date
+import java.util.Sql
+
+//solution
+import java.util.Date
+import java.sql.*
+
+Java will use Date form java.util. java.sql dagi Date kerak bo'lsa java.sql.Date
+qilib yaratish kerak.
+
+java.sql.Date date = new java.sql.Date();
+---------------------------------------------------------------
+javac ocppackage/Ocp.java ocapackage/Oca.java  - bir nechta fayllarni compile qilish.
+
+Packageni o'zini alohida compile qilib bo'lmaydi. Error beradi.
+javac ocppackage //Error
+
+Packageni ichidagi hamma java fayllarni compile qilish uchun quyidagi syntaxdan foydalanamiz(wildcards).
+
+javac ocppackage/*.java
+javac ocppackage/*.java ocapackage/*.java
+
+
+
+
