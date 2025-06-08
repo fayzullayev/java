@@ -94,5 +94,199 @@ javac ocppackage/*.java
 javac ocppackage/*.java ocapackage/*.java
 
 
+java Main // Agar java Main.class xato beradi. .class kerak emas.
+
+javac -d classes org/example/*.java org/example/ocapackage/Oca.java org/example/ocppackage/*.java
+Bu holatda alohida classes folder va eski java fayllar turgan folder saqlanadi.
+
+java -cp <classpath> org.example.Main or java -classpath <classpath> org.example.Main
+
+
+-----------------------------------------------------------
+
+public class Student {
+    public Student() {
+        System.out.println("Student constructor");
+    }
+}
+
+constructor class nomi bilan bir xil bo'lishi kerak va return type bo'lmasligi kerak.
+Agar return type bo'lsa oddiy method bo'lib qoladi constructor emas.
+constructor public, private, protected kabi access modifierlar qabul qiladi.
+
+//Masalan bu yerda Student method constructor emas.
+public class Student {
+    public void Student() {
+        System.out.println("Student constructor");
+    }
+}
+
+class tepadan pastga qarab bajariladi. Birinchi fieldlar va initializer block bajariladi.
+Va oxirida constructor bajariladi.
+
+public class Student {
+
+    public String name = "Mirodil"; // instance variable
+
+
+    public Student() {
+        System.out.println(this.name);
+        this.name = "David";
+        System.out.println(this.name);
+        System.out.println("Inside the constructor");
+    }
+
+    {
+        System.out.println("Inside the initializer block - " + name); //initializer block
+    }
+
+}
+------------------------------------------------
+
+number systems
+int number = 7; // decimal - 7
+int number = 0B111; // binary - 7
+int number = 0b111; // binary - 7
+int number = 055; // octal - 45
+int number = 0X1Afb; //hex - 6907
+int number = 0x1Afb; //hex - 6907
+------------------------------------------------
+int number = 100_000_000 - true
+int number = _100_000_000 - false(boshida mumkin emas)
+int number = 100_000_000_ - false(oxirida mumkin emas)
+double number = 100_000_000.99; - true
+double number = 100_000_000_._99; - xato(nuqtadan oldin va keyin mumkin emas)
+float number = 100_000.99f - true
+float number = 100_000.99_f_ - false - (f,F,d,D,l,L harflaridan oldin va keyin mumkin emas)
+As many underscores are possible
+int number = 100____000__000 - true
+double number = 100____000__000.2323_000_332D - true;
+------------------------------------------------
+Integer number = Integer.valueOf(222);
+Byte number = Byte.valueOf((byte) 10);
+Float number = Float.valueOf(55.5f);
+Float number = Float.valueOf((float) 55.5);
+------------------------------------------------
+String ss = "4";
+Integer number = Integer.valueOf(ss);
+System.out.println(number);
+------------------------------------------------
+Integer number = Integer.valueOf(ss); -> from string or literal
+int number = Integer.valueOf(ss); -> Auto-unboxing to int;
+------------------------------------------------
+int n = Integer.parseInt("77"); -> converting from string to int
+------------------------------------------------
+//Text blocks - in the beginning triple double quotes and new line is necessary
+String str = """
+                Hello World!
+                My name is
+                Mirodil
+                """;
+------------------------------------------------
+ String str = """
+                Hello World!
+                "My name" is
+                Mirodil""";
+
+ System.out.println(str + "Hello");
+
+ Hello World!
+ "My name" is
+ MirodilHello
+------------------------------------------------
+String str = """
+         Hello World!
+         "My name" is
+         Mirodil
+         """;
+
+System.out.println(str + "Hello");
+
+Hello World!
+"My name" is
+Mirodil
+Hello
+------------------------------------------------
+Variable must begin with a letter,currency symbol($,€,￡) or underscore.
+Can include numbers, but not start with a number
+Single underscore (_) is not allowed as an identifier
+
+String  _ = "Mirodil"; - invalid
+String  4 = "Mirodil"; - invalid
+String  $ = "Mirodil"; - valid
+String  _$ = "Mirodil"; - valid
+String  _salom = "Mirodil"; - valid
+String  _sa$77 = "Mirodil"; - valid
+String  € = "Mirodil"; - valid
+String  ￡ = "Mirodil"; - valid
+
+int a = 1, b = 2, c = 3;
+
+int a, b, c;
+a = b = c = 1;
+
+boolean v = true, w, z = false;
+------------------------------------------------
+Three kinds of variables
+1. local variables - exist only within the block of code { ... }
+2. instance variables (fields) - defined within the specific instance of the object
+3. class variables - belong to a class and is shared with all instances of the class
+    • marked with keyword static
+
+• instance and class variables don't require initialization
+• assume the default values of their type
+
+local variables must be initialized before use !!
+------------------------------------------------
+be careful if initialization is within if-statement
+Bu code compile bo'lmaydi. Chunki bunda variable a initialize bo'lmadlik ehtimoli bor.
+
+public void doesNotCompile(boolean isOK) {
+    int a;
+
+    if (isOK) a = 5;
+    // some code using a
+    return a;
+}
+
+Bu code compile bo'ladi. Chunki bunda variable a albatta initialize bo'ladi.
+
+public int compile(boolean isOK) {
+    int a;
+
+    if (isOK) a = 5;
+    else a = 6;
+    return a;
+}
+------------------------------------------------
+//final - error beradi.
+
+final int a = 8;
+a = 9;
+
+//final - error bermaydi.
+
+final int a;
+a = 9;
+
+//error
+final int[] num1 = {1, 2, 3};
+num1 = new int[]{2, 3, 4};
+
+//no-error
+final int[] num1 = {1, 2, 3};
+num1[1] = 99;
+------------------------------------------------
+//Type inference - only local variables not class fields or instance variables not parameters.f
+
+var number = 77; -> valid;
+var hello = "String"; -> valid;
+
+var number = null; -> invalid;
+
+var var = 12345;-> this works. Because var is not a reserved keyword.
+------------------------------------------------
+System.gc(); garbage collector ishga tushirish. but it's not guaranted to do anything.
+------------------------------------------------
 
 

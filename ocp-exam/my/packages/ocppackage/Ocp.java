@@ -9,3 +9,6 @@ public class Ocp {
         oca.sayHello();
     }
 }
+
+
+//open -a "/Users/mirodilfayzullayev/Applications/IntelliJ IDEA Ultimate.app" "$@"
